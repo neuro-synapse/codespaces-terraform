@@ -19,7 +19,7 @@ variable "secret_key" {
 
 # Create the S3 bucket
 resource "aws_s3_bucket" "bucket" {
-  bucket = "my-bucket"
+  bucket = "mywecd-bucket"
   acl    = "private"
 
   tags = {
