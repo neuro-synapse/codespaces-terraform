@@ -1,4 +1,4 @@
-# Configure the AsWS Provider
+# Configure the AsWSf Provider
 provider "aws" {
   region     = "us-east-1"
   access_key = var.access_key
