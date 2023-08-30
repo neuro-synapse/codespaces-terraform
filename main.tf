@@ -1,4 +1,4 @@
-# Configure the AWSs Provider
+# Configure the AWSd Provider
 provider "aws" {
   region = "us-west-2"
   access_key = var.access_key
