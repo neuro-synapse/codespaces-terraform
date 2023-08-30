@@ -82,6 +82,14 @@ jobs:
     - name: Terraform Format
       run: terraform fmt
 
+    - name: Render terraform docs and push changes back to PR
+      uses: terraform-docs/gh-actions@main
+      with:
+        working-dir: .
+        output-file: README.md
+        output-method: inject
+        git-push: "true"
+
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan -input=false
