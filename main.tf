@@ -1,18 +1,18 @@
 # Configure the AWS Provider
 provider "aws" {
-  region     = "us-west-2"
+  region     = "us-east-1"
   access_key = var.access_key
   secret_key = var.secret_key
 }
 
 # Define the input variables
 variable "access_key" {
-  description = "AKIA4XDB54DG34J5TAFO"
+  description = "AWS access key"
   type        = string
 }
 
 variable "secret_key" {
-  description = "sdPwSp/38cS7QdmypLkGjWejqI6YLWQFzUCxzRMZ"
+  description = "AWS secret key"
   type        = string
   sensitive   = true
 }
