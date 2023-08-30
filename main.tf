@@ -5,7 +5,7 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-# Define the input variables
+# Define the input variablef
 variable "access_key" {
   description = "AWS access key"
   type        = string
