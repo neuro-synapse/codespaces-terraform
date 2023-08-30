@@ -67,6 +67,11 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
+  
+    # Add your personal access token (PAT) as a secret in your repository and reference it here
+    - name: Set up PAT
+      run: echo "${{ secrets.PAT }}" > ~/.pat
+
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
